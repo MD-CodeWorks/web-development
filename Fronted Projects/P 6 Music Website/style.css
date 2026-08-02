@@ -1,0 +1,57 @@
+:root {
+  --purple500: #281154;
+  --purple300: #270082;
+  --purple600: #1b0058;
+  --red600: #dc0000;
+  --body: #f9f6ff;
+  --max-width: 1200px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: var(--purple300);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul{
+    display: flex;
+    gap: 20px;
+}
+
+.hero-section{
+    background-image: url(images/hero_image.png);
+    color: white;
+    height: 95vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section div{
+    width: 50%;
+}
+
+.hero-section h1{
+    font-size: 96px;
+    text-align: center;
+}
+
+.hero-section h2{
+    margin: 10px 0;
+    text-align: center;
+}
