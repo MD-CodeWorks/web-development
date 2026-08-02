@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+nav .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+nav .btn button{
+    background-color: white;
+    color: orange;
+    width: 100px;
+    padding: 10px;
+    border: 1px solid orange;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 80vw;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 10px;
+}
+
+.content h3{
+    width: 250px;
+    background-color: green;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    
+}
+.content h1{
+    margin: 30px 0;
+    font-size: 70px;
+    font-weight: 560;
+}
+.content{
+    width: 40%;
+}
+
+.content button{
+    background-color: orange;
+    color: white;
+    width: 100px;
+    padding: 10px;
+    border: none;
+    margin-top: 20px;
+}
+
+.fea{
+    display: flex;
+    width: 80vw;
+    margin: auto;
+}
+
+.fea .box1, .box2, .box3{
+    width: 50%;
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+hr{
+    width: 90vw;
+    margin: auto;
+}
+
+/* Section: Our Menu */
+.Menu button{
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+    margin: 40px;
+}
+
+.Menu h3{
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.Menu{
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-img{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 100px;
+}
+
+.img-box1 .img1{
+    margin-bottom: 20px;
+}
+
+.img-box1 .img4{
+    margin-right: 25px;
+}
+
+.img-box2 .img2{
+    margin-bottom: 20px;
+}
+
+.img-box3 .img3{
+    margin-bottom: 27px;
+}
+
+footer{
+    background-color: pink;
+    min-height: 40vh;
+}
+
+.f-container{
+    padding: 50px;
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.f-container div{
+    width: 250px;
+}
+
+.f-container ul{
+    list-style: none;
+}
+
+.f-container, h3{
+    margin-bottom: 20px;
+}
+
+#email{
+    margin-top: 8px;
+}
+
+.f-container .email{
+    display: flex;
+    gap: 5px;
+    align-items: flex-end;
+}
+
+.f-container .email button{
+    background-color: orange;
+    color: white;
+    width: 50px;
+    padding: 2px;
+    border: none;
+}
+
+.f-container, ul li{
+    margin-top: 10px;
+}
+
+footer .social-link img{
+    width: 30px;
+}
+
+footer .social-container{
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+footer .MD{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 10px;
+    font-style: bold;
+    font-style: italic;
+    font-weight: 600;
+
+}
