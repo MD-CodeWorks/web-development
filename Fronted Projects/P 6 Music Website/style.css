@@ -55,3 +55,99 @@ nav ul{
     margin: 10px 0;
     text-align: center;
 }
+
+/* Music section */
+
+.music{
+    height: 100vh;
+    background-color: var(--purple500);
+}
+
+.music .heading img{
+    width: 35px;
+}
+
+.music .heading{
+    display: flex;
+    gap: 10px;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.music .container{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 35px;
+}
+
+.music .content{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.music .content button{
+    width: 200px;
+    height: 40px;
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 18px;
+}
+
+.music .content .p-1 {
+    text-align: center;
+    font-size: 22px;
+}
+
+/* section 3 */
+
+.s-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.s-3 .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+}
+
+.s-3 .container h2{
+    margin-top: 300px;
+}
+
+.s-3 .container p{
+    font-size: 18px;
+    width: 70%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.s-3 .container button{
+    width: 120px;
+    height: 50px;
+    background-color: var(--purple300);
+    color: var(--body);
+    border: none;
+    font-size: 16px;
+}
+
+.s-3 .img{
+    margin-bottom: 50px;
+}
