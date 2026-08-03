@@ -17,8 +17,14 @@ nav{
     background-color: var(--purple300);
     color: white;
     display: flex;
-    justify-content: space-around;
-    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+}
+
+nav .logo{
+    font-size: 30px;
+    font-weight: 800;
 }
 
 nav ul li{
@@ -63,8 +69,9 @@ nav ul{
     background-color: var(--purple500);
 }
 
-.music .heading img{
-    width: 35px;
+.music .heading i{
+    font-size: 3px;
+    color: var(--body);
 }
 
 .music .heading{
@@ -150,4 +157,110 @@ nav ul{
 
 .s-3 .img{
     margin-bottom: 50px;
+}
+
+/* section 4 */
+.s-4{
+    height: 100vh;
+    background-image: url(images/video.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--body);
+}
+
+.s-4, .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.s-4 .container{
+    width: 70%;
+    text-align: center;
+}
+
+/* section 5: Gift Card */
+.s-5{
+    width: 80vw;
+    height: 70vh;
+    margin: auto;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.s-5 .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.s-5 .content{
+    width: 50%;
+    
+}
+
+.s-5 .content > p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.s-5 .content .p-2{
+    margin: 20px 0;
+}
+
+.s-5 hr{
+    margin: 30px 0;
+}
+.s-5 .content button{
+    width: 100px;
+    height: 50px;
+    border: none;
+    background-color: var(--purple300);
+    color: var(--body);
+    font-size: 18px;
+}
+
+footer{
+    height: 35vh;
+    background-color: var(--purple500);
+    color: var(--body);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+footer .container, .box1, .box2, .box3, .box4{
+    width: 70%;
+}
+
+footer .container ul li{
+    list-style: none;
+    line-height: 25px;
+}
+
+footer .container hr{
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.copy{
+    background-color: var(--purple300);
+    color: var(--body);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
