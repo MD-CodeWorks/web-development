@@ -14,9 +14,13 @@
             <img src="images/logo.png" alt="logo">
         </div>
         <div class="btn">
+            <span class="close-btn">&times;</span>
             <a href="#home">Home</a>
             <a href="#our-menu">Our Menu</a>
             <a href="#footer">Contact Us</a>
+        </div>
+        <div class="hamburger">
+            &#9776;
         </div>
     </nav>
 
@@ -129,28 +133,8 @@
         </div>
     </footer>
     <!-- Back to Top Button -->
-<button id="scrollTopBtn" title="Go to top">&#8593;</button>
-<script>
-    // Button element select karein
-    const scrollTopBtn = document.getElementById("scrollTopBtn");
-
-    // Scroll event listener: jab user 300px niche jaye to button dikhao
-    window.onscroll = function() {
-        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-            scrollTopBtn.style.display = "block";
-        } else {
-            scrollTopBtn.style.display = "none";
-        }
-    };
-
-    // Click karne par smooth scroll karke top par le jao
-    scrollTopBtn.addEventListener("click", function() {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    });
-</script>
+    <button id="scrollTopBtn" title="Go to top">&#8593;</button>
+    <script src="script.js"></script>
 </body>
 
 </html>
