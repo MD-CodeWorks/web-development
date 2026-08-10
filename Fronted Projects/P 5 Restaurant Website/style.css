@@ -29,7 +29,7 @@ nav .btn a {
   border: 1px solid orange;
   font-size: 16px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 20px;
   min-width: 120px;
   text-align: center;
 }
@@ -48,9 +48,19 @@ nav .btn a {
 .container .img {
   flex: 1;
 }
-.container .img img {
+/* .container .img img {
   width: 100%;
   height: auto;
+} */
+
+.container .img img {
+  width: 100%;
+  max-width: 480px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
 }
 .content h3 {
   width: 250px;
@@ -59,13 +69,19 @@ nav .btn a {
   font-size: 14px;
   text-align: center;
   padding: 10px;
+  border-radius: 20px;
 }
 .content h1 {
   margin: 30px 0;
-  font-size: 70px;
+  font-size: 65px;
   font-weight: 560;
+  line-height: 1.2;
 }
-
+.content p {
+  line-height: 1.6;
+  color: #555;
+  max-width: 90%;
+}
 .content {
   flex: 1;
 }
@@ -75,12 +91,22 @@ nav .btn a {
   color: white;
   padding: 12px 24px;
   border: none;
-  margin-top: 20px;
   font-size: 16px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 20px;
+  margin-top: 15px;
+  box-shadow: 0px 4px 12px rgba(255, 165, 0, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
+.content button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.content button:hover {
+  background-color: #e69500;
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 16px rgba(255, 165, 0, 0.5);
+}
 .fea {
   display: flex;
   width: 80vw;
@@ -111,10 +137,23 @@ hr {
 .Menu button {
   background-color: green;
   color: white;
-  padding: 10px;
+  padding: 10px 24px;
   border: none;
   font-size: 20px;
-  margin: 40px;
+  margin: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.Menu button:hover {
+  background-color: darkgreen;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 128, 0, 0.3);
+}
+
+.Menu button:active {
+  transform: translateY(0);
+  box-shadow: none;
 }
 
 .Menu h3 {
@@ -213,7 +252,7 @@ footer {
   padding: 6px 15px;
   border: none;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 20px;
 }
 
 .f-container ul li,
@@ -337,5 +376,52 @@ nav .btn .close-btn {
     cursor: pointer;
     margin-right: 20px;
     margin-bottom: 10px;
+  }
+
+  /* Hero section */
+  .hero-section .container {
+    flex-direction: column-reverse;
+  }
+  .content h3 {
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+  }
+  .content h1 {
+    font-size: 32px;
+    margin: 15px 0;
+    line-height: 1.2;
+  }
+  .content p {
+    line-height: 1.6;
+    color: #555;
+    max-width: 90%;
+  }
+  .content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-section .fea {
+    flex-direction: column;
+    gap: 20px;
+  }
+  /* Mobile Circle Image Adjustment */
+  .container .img img {
+    max-width: 280px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+  }
+
+  /* Feature cards centering for mobile */
+  .fea .box1,
+  .fea .box2,
+  .fea .box3 {
+    align-items: center;
+    text-align: left;
+  }
+  hr {
+    width: 100%;
   }
 }
