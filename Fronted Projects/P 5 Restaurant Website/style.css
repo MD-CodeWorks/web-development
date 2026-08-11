@@ -32,6 +32,16 @@ nav .btn a {
   border-radius: 20px;
   min-width: 120px;
   text-align: center;
+  transition: all 0.3s ease;
+}
+nav .btn a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 12px rgba(255, 165, 0, 0.3);
+}
+
+nav .btn a:active {
+  transform: translateY(0);
+  box-shadow: none;
 }
 
 /* Hero Section / Section 1 */
@@ -48,11 +58,6 @@ nav .btn a {
 .container .img {
   flex: 1;
 }
-/* .container .img img {
-  width: 100%;
-  height: auto;
-} */
-
 .container .img img {
   width: 100%;
   max-width: 480px;
@@ -85,25 +90,27 @@ nav .btn a {
 .content {
   flex: 1;
 }
-
 .content button {
   background-color: orange;
   color: white;
   padding: 12px 24px;
-  border: none;
+  border: 1px solid orange;
   font-size: 16px;
   cursor: pointer;
   border-radius: 20px;
   margin-top: 15px;
   box-shadow: 0px 4px 12px rgba(255, 165, 0, 0.4);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 .content button:active {
   transform: translateY(2px);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 .content button:hover {
-  background-color: #e69500;
+  background-color: white;
+  color: orange;
   transform: translateY(-2px);
   box-shadow: 0px 6px 16px rgba(255, 165, 0, 0.5);
 }
@@ -174,6 +181,7 @@ hr {
 .container-img {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 230px;
   gap: 20px;
   width: 100%;
   margin-bottom: 100px;
@@ -182,19 +190,20 @@ hr {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+}
+.container-img img:hover {
+  transform: scale(1.03);
 }
 .container-img .img1 {
   grid-column: span 2;
   grid-row: span 2;
 }
-/* Image 2: Middle Tall Image */
 .img2 {
   grid-column: span 1;
   grid-row: span 2;
 }
-
-/* Image 7: Right Bottom Tall Image */
 .img7 {
   grid-column: span 1;
   grid-row: span 2;
@@ -202,7 +211,8 @@ hr {
 
 /* Footer */
 footer {
-  background-color: pink;
+  background-color: #1e272e;
+  color: white;
   min-height: 40vh;
 }
 
@@ -222,7 +232,16 @@ footer {
 .f-container ul {
   list-style: none;
 }
+.f-container ul li {
+  color: #a4b0be;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
 
+.f-container ul li:hover {
+  color: orange;
+}
 .f-container h3 {
   margin-bottom: 20px;
 }
@@ -238,48 +257,88 @@ footer {
   display: flex;
   gap: 5px;
 }
-
 #email {
   flex: 1;
-  padding: 6px 10px;
+  padding: 8px 14px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 20px;
 }
-
+/* Newsletter Button Hover Style */
 .f-container .email-input button {
   background-color: orange;
   color: white;
-  padding: 6px 15px;
+  padding: 8px 20px;
   border: none;
   cursor: pointer;
   border-radius: 20px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.f-container .email-input button:hover {
+  background-color: #e69500;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 165, 0, 0.4);
+}
+
+.f-container .email-input button:active {
+  transform: translateY(0);
 }
 
 .f-container ul li,
 .f-container .fbox4 p {
   margin-top: 10px;
 }
-
-footer .social-link img {
-  width: 30px;
-}
-
-footer .social-container {
-  margin-top: 10px;
+/* Footer Social Icons Styling */
+.social-container {
   display: flex;
-  gap: 10px;
-}
-footer .social-container div {
-  width: auto;
+  gap: 15px;
+  margin-top: 15px;
 }
 
+.social-container i {
+  font-size: 20px;
+  color: white;
+  background-color: #2c3e50;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effects */
+.social-container i:hover {
+  background-color: orange;
+  color: white;
+  transform: translateY(-3px);
+}
+/* Styling Copyright Bar */
 footer .MD {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  padding: 10px;
-  font-style: italic;
-  font-weight: 600;
+  align-items: center;
+  padding: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: #182026;
+}
+footer .MD h4 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #a4b0be;
+  text-align: center;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+footer .MD h4:hover {
+  color: orange;
+  transform: translateY(-2px);
+  text-shadow: 0 2px 8px rgba(255, 165, 0, 0.3);
 }
 
 /* Scroll to Top Button */
@@ -306,11 +365,10 @@ footer .MD {
 
 #scrollTopBtn:hover {
   background-color: darkorange;
-  transform: scale(1.1); /* Hover par thoda bada dikhega */
+  transform: scale(1.1);
 }
 
 /* For Responsive website */
-
 nav .hamburger {
   display: none;
 }
@@ -338,6 +396,8 @@ nav .btn .close-btn {
     padding: 15px 25px;
     font-size: 18px;
     font-weight: 600;
+    box-shadow: none;
+    transform: none;
     transition: all 0.3s ease;
   }
   nav .btn a:hover {
@@ -345,8 +405,9 @@ nav .btn .close-btn {
     background-color: #fff8f0;
     border-left-color: orange;
     padding-left: 30px;
+    transform: none;
+    box-shadow: none;
   }
-
   nav .hamburger {
     display: block;
     font-size: 28px;
@@ -423,5 +484,52 @@ nav .btn .close-btn {
   }
   hr {
     width: 100%;
+  }
+  /* Our Menu Section */
+  .Menu .container-img {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .Menu .container-img img {
+    height: 230px;
+    object-fit: cover;
+  }
+  .Menu .container-img .img1 {
+    grid-column: span 2 !important;
+    grid-row: span 1 !important;
+  }
+  .Menu .container-img img,
+  .container-img .img2,
+  .container-img .img7 {
+    grid-column: span 1 !important;
+    grid-row: span 1 !important;
+  }
+  /* Footer */
+  .f-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px 20px;
+    width: 90vw;
+  }
+  .f-container .logo {
+    display: none;
+  }
+  .f-container .fbox2,
+  .f-container .fbox3 {
+    grid-column: span 1;
+  }
+  .f-container .fbox4 {
+    grid-column: span 2;
+  }
+  .f-container .email-input {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+  }
+  #email {
+    flex: 1;
+  }
+  footer .MD h4{
+    font-size: 14px;
   }
 }
