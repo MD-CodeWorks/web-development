@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Google Sans", sans-serif;
+}
+body{
+    background-color: black;
+}
+.sepration{
+    height: 8px;
+    background-color: #232323;
+    border-top: 2px solid #222;
+}
+
+.main{
+    background-image: url(assets/images/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1600px, 100vw);
+    height: 70vh;
+    position: relative;
+}
+.main .box{
+    height: 70vh;
+    width: 100%;
+    opacity: 0.44;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 60vw;
+    margin: auto;
+    height: 62px;
+    position: relative;
+    z-index: 10;
+}
+nav img{
+    width: 114px;
+    position: relative;
+    z-index: 10;
+}
+/* nav button{
+    position: relative;
+    z-index: 1;
+} */
+.flex{
+    display: flex;
+    gap: 10px;
+}
+.flex select{
+    padding: 6px 16px;
+    color: white;
+    background-color: rgba(23, 23, 23, 0.7);
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+.flex select option{
+    background-color: rgb(23, 23, 23);
+    color: white;
+}
+.btn-red-sm{
+    background-color: #e50914;
+    color: white;
+    padding: 7px 16px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.hero{
+    color: white;
+    height: calc(100% - 62px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 30px;
+    position: relative;
+    z-index: 10;
+}
+.hero> :nth-child(1){
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+}
+.hero> :nth-child(2){
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+.hero> :nth-child(3){
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+.hero-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.main input{
+    padding: 14px 20px;
+    font-size: 16px;
+    width: 350px;
+    color: white;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.btn-red{
+    background-color: #e50914;
+    color: white;
+    padding: 12px 24px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
