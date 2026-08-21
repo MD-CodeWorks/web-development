@@ -128,3 +128,37 @@ nav img{
     border: none;
     cursor: pointer;
 }
+
+/* Section 1, 2, 3, 4 */
+
+.first{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 70vw;
+    padding: 50px 0;
+}
+.secImg{
+    position: relative;   
+}
+.secImg img{
+    width: 30vw;
+    position: relative;
+    z-index: 1;
+}
+.secImg video{
+    position: absolute;
+    top: 63px;
+    right: 0;
+    width: 356px;
+}
+.first h1{
+    font-size: 48px;    
+}
+.first span{
+    font-size: 20px;
+}
+
+/* Section 5 */
